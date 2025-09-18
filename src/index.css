@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme extends {
+  --color-primary: var(--color-blue);
+}
+
+html, body, #root { height: 100%; }
+
+/* 라이트/다크 공통 + 다크 변형 */
+:root {
+  color-scheme: light dark;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.dark a {
+  @apply text-sky-400 hover:text-white;
+}
